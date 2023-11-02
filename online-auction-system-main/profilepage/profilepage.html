@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfilePage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="form-box">
+            <h2>Profile Creation</h2>
+            
+                <div class="input-box">
+                    <input type="text" id="Username">
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="About">
+                    <label>About Me</label>
+                </div>
+
+                <div class="input-box">
+
+                    <input type="tel" id="num" pattern="[0-9]{10}" maxlength="10">
+                    <label>Mobile Number</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="Address">
+                    <label>Address</label>
+                </div>
+                <button class="btn" id="submit" onclick="submitfunction()">Submit</button>
+            
+        </div>
+        <script>
+            function submitfunction() {
+                window.location = "../homepage/homepage.html"
+            }
+        </script>
+</body>
+
+</html>
